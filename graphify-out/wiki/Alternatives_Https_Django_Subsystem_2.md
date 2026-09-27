@@ -1,0 +1,49 @@
+# Alternatives Https Django Subsystem
+
+> 25 nodes
+
+## Key Concepts
+
+- **대안, 영감, 비교** (24 connections) — `docs/ko/docs/alternatives.md`
+- **Django** (1 connections) — `docs/ko/docs/alternatives.md`
+- **Django REST Framework** (1 connections) — `docs/ko/docs/alternatives.md`
+- **FastAPI** (1 connections) — `docs/ko/docs/alternatives.md`
+- **Flask** (1 connections) — `docs/ko/docs/alternatives.md`
+- **HTTPX** (1 connections) — `docs/ko/docs/alternatives.md`
+- **JSON Schema** (1 connections) — `docs/ko/docs/alternatives.md`
+- **Marshmallow** (1 connections) — `docs/ko/docs/alternatives.md`
+- **OpenAPI** (1 connections) — `docs/ko/docs/alternatives.md`
+- **Pydantic** (1 connections) — `docs/ko/docs/alternatives.md`
+- **ReDoc** (1 connections) — `docs/ko/docs/alternatives.md`
+- **Requests** (1 connections) — `docs/ko/docs/alternatives.md`
+- **Starlette** (1 connections) — `docs/ko/docs/alternatives.md`
+- **Swagger** (1 connections) — `docs/ko/docs/alternatives.md`
+- **Swagger UI** (1 connections) — `docs/ko/docs/alternatives.md`
+- **Uvicorn** (1 connections) — `docs/ko/docs/alternatives.md`
+- **Webargs** (1 connections) — `docs/ko/docs/alternatives.md`
+- **소개** (1 connections) — `docs/ko/docs/alternatives.md`
+- **이전 도구들** (1 connections) — `docs/ko/docs/alternatives.md`
+- **[Django](https://www.djangoproject.com/)** (1 connections) — `docs/ko/docs/alternatives.md`
+- **[Django REST Framework](https://www.django-rest-framework.org/)** (1 connections) — `docs/ko/docs/alternatives.md`
+- **[Flask](https://flask.palletsprojects.com)** (1 connections) — `docs/ko/docs/alternatives.md`
+- **[Requests](https://requests.readthedocs.io)** (1 connections) — `docs/ko/docs/alternatives.md`
+- **[Swagger](https://swagger.io/) / [OpenAPI](https://github.com/OAI/OpenAPI-Specification/)** (1 connections) — `docs/ko/docs/alternatives.md`
+- **Flask REST framework들** (1 connections) — `docs/ko/docs/alternatives.md`
+
+## Relationships
+
+- No strong cross-community connections detected
+
+## Source Files
+
+- `docs/ko/docs/alternatives.md`
+
+## Audit Trail
+
+- EXTRACTED: 24 (100%)
+- INFERRED: 0 (0%)
+- AMBIGUOUS: 0 (0%)
+
+---
+
+*Part of the graphify knowledge wiki. See [index](index.md) to navigate.*

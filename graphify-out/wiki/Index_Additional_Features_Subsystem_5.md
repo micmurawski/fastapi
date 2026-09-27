@@ -1,0 +1,28 @@
+# Index Additional Features Subsystem
+
+> 4 nodes
+
+## Key Concepts
+
+- **進階使用者指南** (3 connections) — `docs/zh-hant/docs/advanced/index.md`
+- **additional-features** (1 connections) — `docs/zh-hant/docs/advanced/index.md`
+- **advanced-user-guide** (1 connections) — `docs/zh-hant/docs/advanced/index.md`
+- **read-the-tutorial-first** (1 connections) — `docs/zh-hant/docs/advanced/index.md`
+
+## Relationships
+
+- No strong cross-community connections detected
+
+## Source Files
+
+- `docs/zh-hant/docs/advanced/index.md`
+
+## Audit Trail
+
+- EXTRACTED: 3 (100%)
+- INFERRED: 0 (0%)
+- AMBIGUOUS: 0 (0%)
+
+---
+
+*Part of the graphify knowledge wiki. See [index](index.md) to navigate.*

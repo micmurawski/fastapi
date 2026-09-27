@@ -1,0 +1,25 @@
+# Graphify Agents Subsystem
+
+> 1 nodes
+
+## Key Concepts
+
+- **graphify** (2 connections) — `AGENTS.md`
+
+## Relationships
+
+- No strong cross-community connections detected
+
+## Source Files
+
+- `AGENTS.md`
+
+## Audit Trail
+
+- EXTRACTED: 1 (100%)
+- INFERRED: 0 (0%)
+- AMBIGUOUS: 0 (0%)
+
+---
+
+*Part of the graphify knowledge wiki. See [index](index.md) to navigate.*

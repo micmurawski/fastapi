@@ -1,0 +1,29 @@
+# Testing Events Lifespan Subsystem
+
+> 5 nodes
+
+## Key Concepts
+
+- **Event'leri Test Etme: lifespan ve startup - shutdown** (4 connections) — `docs/tr/docs/advanced/testing-events.md`
+- **"Resmi Starlette dokümantasyon sitesinde testlerde lifespan'ı çalıştırma."** (1 connections) — `docs/tr/docs/advanced/testing-events.md`
+- **lifespan** (1 connections) — `docs/tr/docs/advanced/testing-events.md`
+- **Starlette** (1 connections) — `docs/tr/docs/advanced/testing-events.md`
+- **TestClient** (1 connections) — `docs/tr/docs/advanced/testing-events.md`
+
+## Relationships
+
+- No strong cross-community connections detected
+
+## Source Files
+
+- `docs/tr/docs/advanced/testing-events.md`
+
+## Audit Trail
+
+- EXTRACTED: 4 (100%)
+- INFERRED: 0 (0%)
+- AMBIGUOUS: 0 (0%)
+
+---
+
+*Part of the graphify knowledge wiki. See [index](index.md) to navigate.*
