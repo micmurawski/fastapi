@@ -1,4 +1,4 @@
-# graphify reference: add a URL and watch a folder <!-- fastapi 1.0.0 -->
+# graphify reference: add a URL and watch a folder <!-- fastapi 1.0.1 -->
 
 Load this when the user ran `/graphify add <url>` or passed `--watch`. Neither is part of the default build.
 
