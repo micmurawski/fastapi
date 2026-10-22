@@ -1,4 +1,4 @@
-# graphify reference: transcribe video and audio
+# graphify reference: transcribe video and audio <!-- fastapi 1.0.0 -->
 
 Load this only when `detect` reported one or more `video` files. A corpus with no video never reads this.
 

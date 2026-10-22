@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "agents": {
+    "fastapi": {
+      "context": {
+        "CLAUDE.md": [
+          "graphify"
+        ]
+      },
+      "harnesses": {
+        "claude": {
+          "version": "1.0.0",
+          "revision": "1.0.0@rev_47412660e14157b088ded619",
+          "versioned_skills": [
+            "graphify"
+          ],
+          "files": [
+            ".claude/skills/graphify/.graphify_version",
+            ".claude/skills/graphify/SKILL.md",
+            ".claude/skills/graphify/references/add-watch.md",
+            ".claude/skills/graphify/references/exports.md",
+            ".claude/skills/graphify/references/extraction-spec.md",
+            ".claude/skills/graphify/references/github-and-merge.md",
+            ".claude/skills/graphify/references/hooks.md",
+            ".claude/skills/graphify/references/query.md",
+            ".claude/skills/graphify/references/transcribe.md",
+            ".claude/skills/graphify/references/update.md"
+          ],
+          "hooks": {
+            "claude-PreToolUse-0-0": [
+              "pre_tool_use",
+              "Bash|Grep",
+              "graphify hook-guard search"
+            ],
+            "claude-PreToolUse-1-0": [
+              "pre_tool_use",
+              "Read|Glob",
+              "graphify hook-guard read"
+            ]
+          },
+          "hook_harnesses": {
+            "claude-PreToolUse-0-0": [
+              "claude"
+            ],
+            "claude-PreToolUse-1-0": [
+              "claude"
+            ]
+          },
+          "owns_hooks": [],
+          "mcps": []
+        }
+      }
+    },
+    "thearc-evolve": {
+      "context": {},
+      "harnesses": {
+        "claude": {
+          "version": "0.1.0",
+          "revision": "0.1.0@rev_31d4130b3c60c075a4771931",
+          "versioned_skills": [
+            "evolve"
+          ],
+          "files": [
+            ".claude/skills/evolve/SKILL.md",
+            ".claude/skills/evolve/evolve.py",
+            ".claude/skills/evolve/prompts/curate.md",
+            ".claude/skills/evolve/prompts/reflect.md"
+          ],
+          "hooks": {},
+          "hook_harnesses": {},
+          "owns_hooks": [],
+          "mcps": []
+        }
+      }
+    }
+  }
+}

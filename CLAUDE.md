@@ -1,4 +1,4 @@
-## graphify
+## graphify <!-- fastapi 1.0.0 -->
 
 This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.
 

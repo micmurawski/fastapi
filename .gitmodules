@@ -1,0 +1,3 @@
+[submodule ".thearc/workspace"]
+	path = .thearc/workspace
+	url = https://github.com/micmurawski/graphify.git
