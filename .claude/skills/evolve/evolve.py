@@ -13,7 +13,7 @@ from pathlib import Path
 from thearc.curation import Curator
 from thearc.evolve import SCHEMA, USEFULNESS, Evolution
 from thearc.flow import BatchNode, Flow, Node
-from thearc.reflection import Reflector
+from thearc.reflection import ReflectionError, Reflector
 from thearc.resources import MetaAgent
 
 PROMPTS = Path(__file__).parent / "prompts"
@@ -62,8 +62,12 @@ class Reflect(BatchNode):
             self.evolution.log.info(f"{session.id}: reflected on in an earlier, stopped run")
             return
         self.evolution.log.info(f"{session.id}: reflecting with {RUNTIME}…")
-        reflection = Reflector(RUNTIME).handoff(REFLECT, session, self.candidate, SCHEMA,
-                                                provenance=self.evolution.provenance(session))
+        try:
+            reflection = Reflector(RUNTIME).handoff(REFLECT, session, self.candidate, SCHEMA,
+                                                    provenance=self.evolution.provenance(session))
+        except ReflectionError as error:  # One failed reflection costs its session, not the round.
+            self.evolution.log.warning(f"{session.id}: no reflection ({error}); going on without it")
+            return
         self.candidate.add_reflection(reflection)
         rated = Counter(item.rating for item in reflection)
         self.evolution.log.info(f"{session.id}: {len(reflection)} rating(s) "
@@ -80,6 +84,9 @@ class Curate(Node):
         evolution, candidate = prep_res
         if not evolution.curated(candidate):
             reflections = evolution.reflections(candidate)
+            if not reflections:
+                evolution.nothing("no reflection succeeded")
+                return None
             evolution.log.info(f"curating with {RUNTIME} from {len(reflections)} reflection(s)…")
             curation = Curator(RUNTIME).curate(CURATE, reflections, candidate, scales=[USEFULNESS])
             for commit in curation.commits:
@@ -88,7 +95,8 @@ class Curate(Node):
         return candidate.reload()
 
     def post(self, shared, prep_res, proposal):
-        shared["proposal"] = proposal
+        if proposal is not None:
+            shared["proposal"] = proposal
 
 
 def propose(evolution: Evolution) -> MetaAgent | None:

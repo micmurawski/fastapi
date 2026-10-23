@@ -56,7 +56,7 @@
       "harnesses": {
         "claude": {
           "version": "0.1.0",
-          "revision": "0.1.0@rev_31d4130b3c60c075a4771931",
+          "revision": "0.1.0@rev_d7a7dc60561a2d4502d8d764",
           "versioned_skills": [
             "evolve"
           ],
