@@ -9,8 +9,8 @@
       },
       "harnesses": {
         "claude": {
-          "version": "1.0.1",
-          "revision": "1.0.1@rev_41ace105b820ff8447fcb282",
+          "version": "1.0.2",
+          "revision": "1.0.2@rev_cf99388e253c9a5aea1cf9e2",
           "versioned_skills": [
             "graphify"
           ],
@@ -29,7 +29,7 @@
           "hooks": {
             "claude-PreToolUse-0-0": [
               "pre_tool_use",
-              "Bash|Grep",
+              "Grep",
               "graphify hook-guard search"
             ],
             "claude-PreToolUse-1-0": [

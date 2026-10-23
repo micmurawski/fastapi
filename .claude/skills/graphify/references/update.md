@@ -1,4 +1,4 @@
-# graphify reference: incremental update and cluster-only <!-- fastapi 1.0.1 -->
+# graphify reference: incremental update and cluster-only <!-- fastapi 1.0.2 -->
 
 Load this only when the user passed `--update` or `--cluster-only`. A first-time full build never reads this file.
 

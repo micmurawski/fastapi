@@ -1,4 +1,4 @@
-# graphify reference: GitHub clone and cross-repo merge <!-- fastapi 1.0.1 -->
+# graphify reference: GitHub clone and cross-repo merge <!-- fastapi 1.0.2 -->
 
 Load this when the user passed one or more `https://github.com/...` URLs, or named several local subfolders to merge into one graph.
 

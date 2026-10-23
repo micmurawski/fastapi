@@ -1,4 +1,4 @@
-# graphify reference: commit hook and native CLAUDE.md integration <!-- fastapi 1.0.1 -->
+# graphify reference: commit hook and native CLAUDE.md integration <!-- fastapi 1.0.2 -->
 
 Load this when the user asked to install the post-commit hook or wire graphify into a project's CLAUDE.md.
 
